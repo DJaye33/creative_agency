@@ -51,9 +51,11 @@ a {
       position: initial;
       padding: 0; } }
 
-@media screen and (min-width: 768px) {
-  .navbar__logo {
-    margin-left: 3.9rem; } }
+.navbar__logo {
+  border: 2px dotted green; }
+  @media screen and (min-width: 768px) {
+    .navbar__logo {
+      margin-left: 3.9rem; } }
 
 .navbar__nav {
   display: none;
