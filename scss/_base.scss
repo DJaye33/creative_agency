@@ -58,4 +58,19 @@ a {
 }
 // End Buttons
 ////////////////////////////////////////////////
+// Headers
+h1 {
+  font-weight: 800;
+  color: var(--color-secondary-txt-black);
+}
+// End Headers
+////////////////////////////////////////////////
+// P Tags
+p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: var(--color-secondary-txt-black)
+}
+// End P Tags
+////////////////////////////////////////////////
 // End Global

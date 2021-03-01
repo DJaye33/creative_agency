@@ -1,9 +1,12 @@
 /////////////////////////////////////
 // Logo
 .navbar__logo {
-  border: 2px dotted green;
   @media screen and (min-width: 768px) {
     margin-left: 3.9rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-left: 16.5rem;
   }
 }
 // End Logo
@@ -17,7 +20,7 @@
   background-color: var(--color-primary-bg-black);
   position: absolute;
   top: 100%;
-  right: 14%;
+  right: 8%;
   padding: 3.2rem 2.7rem 2.8rem;
 
   @media screen and (min-width: 768px) {
@@ -94,7 +97,74 @@
 }
 // End Menu Icons
 /////////////////////////////////////
-// Buttons
+// Hero
+.hero__img-container {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
-// End Buttons
+  &-image {
+    width: 100%;
+  }
+}
+
+.hero__text {
+  padding: 5.6rem 2.4rem 9.6rem;
+
+  @media screen and (min-width: 768px) {
+    padding: 7.7rem 33.1rem 15rem 3.9rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    padding: 7.7rem 51rem 15rem 3.9rem;
+  }
+
+  @media screen and (min-width: 1440px) {
+    padding: 11.2rem 69rem 16rem 16.5rem;
+  }
+
+  &-heading {
+    font-size: 4rem;
+    line-height: 4rem;
+    margin-bottom: 1.5rem;
+
+    @media screen and (min-width: 768px) {
+      font-size: 5.6rem;
+      line-height: 5.6rem;
+      margin-bottom: 1.9rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 8rem;
+      line-height: 8.8rem;
+      margin-bottom: 3.9rem;
+    }
+  }
+
+  &-paragraph {
+    margin-bottom: 6rem;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 5rem;
+    }
+
+    @media screen and (min-width: 1440px) {
+      font-size: 1.8rem;
+      line-height: 3.2rem;
+      margin-bottom: 6.5rem;
+    }
+  }
+
+  &-btn--red {
+    font-size: 1.6rem;
+    background-color: var(--color-primary-red);
+    padding: 2.2rem 4.5rem;
+    transition: background-color 0.2s;
+  }
+
+  &-btn--red:hover {
+    background-color: var(--color-secondary-red);
+  }
+}
+// End Hero
 /////////////////////////////////////

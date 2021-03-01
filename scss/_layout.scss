@@ -14,3 +14,21 @@
 }
 // End Navbar
 /////////////////////////////////////
+// Hero
+.hero {
+  @media screen and (min-width: 768px) {
+    background-image: url("/assets/tablet/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: auto;
+    min-height: 60.6rem;
+    // display: flex;
+  }
+
+  @media screen and (min-width: 1024px) {
+    background-image: url("/assets/desktop/image-hero.jpg");
+    min-height: 80rem;
+  }
+}
+// End Hero
+/////////////////////////////////////
