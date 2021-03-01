@@ -10,11 +10,45 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/main.css" />
     <title>Frontend Mentor | Creative single page site</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <div class="navbar">
+      <div class="navbar__logo">
+        <a href="#" class="navbar__logo-link"
+          ><img
+            src="/assets/desktop/logo.svg"
+            class="navbar__logo-link-item"
+            alt="creative agency"
+        /></a>
+      </div>
+      <div class="navbar__nav">
+        <a href="#" class="navbar__nav-link">About</a>
+        <a href="#" class="navbar__nav-link">Service</a>
+        <a href="#" class="navbar__nav-link">Projects</a>
+        <a href="#" class="navbar__nav-btn btn navbar__nav-btn--red"
+          >Schedule a Call</a
+        >
+      </div>
+      <div class="navbar__menu">
+        <img
+          src="/assets/mobile/icon-hamburger.svg"
+          class="navbar__menu-icon navbar__menu-icon--open"
+          alt="menu open"
+        />
+        <img
+          src="/assets/mobile/icon-cross.svg"
+          class="navbar__menu-icon navbar__menu-icon--close"
+          alt="menu close"
+        />
+      </div>
+    </div>
     <script src="scripts/main.js"></script>
   </body>
 </html>

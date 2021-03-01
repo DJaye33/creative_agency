@@ -1,0 +1,61 @@
+/////////////////////////////////////
+// Logo
+.navbar__logo {
+  border: 2px dotted red;
+}
+// End Logo
+/////////////////////////////////////
+// Navigation
+.navbar__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary-bg-black);
+  position: absolute;
+  top: 100%;
+  right: 14%;
+  padding: 3.2rem 2.7rem 2.8rem;
+  border: 2px dotted green;
+
+  &-link {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-align: center;
+    color: var(--color-primary-white);
+    margin-bottom: 2.4rem;
+  }
+
+  //   &-btn {
+
+  //   }
+
+  &-btn--red {
+    font-size: 1.6rem;
+    background-color: var(--color-primary-red);
+    padding: 2.2rem 4.5rem;
+    transition: background-color 0.2s;
+  }
+
+  &-btn--red:hover {
+    background-color: var(--color-secondary-red);
+  }
+}
+// End Navigation
+/////////////////////////////////////
+// Menu Icons
+.navbar__menu {
+  &-icon:hover {
+    cursor: pointer;
+  }
+
+  &-icon--close {
+    display: none;
+  }
+}
+// End Menu Icons
+/////////////////////////////////////
+// Buttons
+
+// End Buttons
+/////////////////////////////////////

@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+:root {
+  --color-primary-red: #f94f4f;
+  --color-primary-bg-black: #191921;
+  --color-primary-white: #ffffff;
+  --color-secondary-red: #ff9393;
+  --color-secondary-grayish-black: #434356;
+  --color-secondary-txt-black: #000000; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: "Commissioner", sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.btn {
+  border: none;
+  outline: transparent;
+  font-weight: 800;
+  color: var(--color-primary-white);
+  line-height: 2.1rem;
+  white-space: nowrap; }
+
+.btn:hover {
+  cursor: pointer; }
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2.4rem;
+  position: relative;
+  border: 2px dotted; }
+
+.navbar__logo {
+  border: 2px dotted red; }
+
+.navbar__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primary-bg-black);
+  position: absolute;
+  top: 100%;
+  right: 14%;
+  padding: 3.2rem 2.7rem 2.8rem;
+  border: 2px dotted green; }
+  .navbar__nav-link {
+    font-size: 1.8rem;
+    line-height: 3.2rem;
+    text-align: center;
+    color: var(--color-primary-white);
+    margin-bottom: 2.4rem; }
+  .navbar__nav-btn--red {
+    font-size: 1.6rem;
+    background-color: var(--color-primary-red);
+    padding: 2.2rem 4.5rem;
+    transition: background-color 0.2s; }
+  .navbar__nav-btn--red:hover {
+    background-color: var(--color-secondary-red); }
+
+.navbar__menu-icon:hover {
+  cursor: pointer; }
+.navbar__menu-icon--close {
+  display: none; }
+
+/*# sourceMappingURL=main.css.map */

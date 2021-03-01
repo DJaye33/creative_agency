@@ -1,0 +1,56 @@
+// Global
+////////////////////////////////////////////////
+// Basic Reset
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-primary-red: #f94f4f;
+  --color-primary-bg-black: #191921;
+  --color-primary-white: #ffffff;
+
+  --color-secondary-red: #ff9393;
+  --color-secondary-grayish-black: #434356;
+  --color-secondary-txt-black: #000000;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+}
+// End Basic Reset
+////////////////////////////////////////////////
+// Anchor Tags
+a {
+  text-decoration: none;
+}
+// End Anchor Tags
+////////////////////////////////////////////////
+// Buttons
+.btn {
+  border: none;
+  outline: transparent;
+  font-weight: 800;
+  color: var(--color-primary-white);
+  line-height: 2.1rem;
+  white-space: nowrap;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+// End Buttons
+////////////////////////////////////////////////
+// End Global
