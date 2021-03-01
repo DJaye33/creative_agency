@@ -21,6 +21,10 @@ html {
 
 body {
   font-family: "Commissioner", sans-serif; }
+  @media screen and (min-width: 1440px) {
+    body {
+      max-width: 1440px;
+      margin: 0 auto; } }
 
 a {
   text-decoration: none; }
@@ -41,14 +45,18 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 4rem 2.4rem;
-  position: relative;
-  border: 2px dotted; }
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .navbar {
+      position: initial;
+      padding: 0; } }
 
-.navbar__logo {
-  border: 2px dotted red; }
+@media screen and (min-width: 768px) {
+  .navbar__logo {
+    margin-left: 3.9rem; } }
 
 .navbar__nav {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -56,22 +64,50 @@ a {
   position: absolute;
   top: 100%;
   right: 14%;
-  padding: 3.2rem 2.7rem 2.8rem;
-  border: 2px dotted green; }
+  padding: 3.2rem 2.7rem 2.8rem; }
+  @media screen and (min-width: 768px) {
+    .navbar__nav {
+      display: flex;
+      position: initial;
+      top: initial;
+      right: initial;
+      flex-direction: row;
+      align-items: baseline;
+      background-color: var(--color-primary-red);
+      width: 43.8rem; } }
+  @media screen and (min-width: 1440px) {
+    .navbar__nav {
+      width: 70.05rem; } }
   .navbar__nav-link {
     font-size: 1.8rem;
     line-height: 3.2rem;
     text-align: center;
     color: var(--color-primary-white);
-    margin-bottom: 2.4rem; }
+    margin-bottom: 2.4rem;
+    transition: font-weight 0.2s; }
+  .navbar__nav-link:hover {
+    font-weight: bold; }
   .navbar__nav-btn--red {
     font-size: 1.6rem;
     background-color: var(--color-primary-red);
     padding: 2.2rem 4.5rem;
     transition: background-color 0.2s; }
+    @media screen and (min-width: 768px) {
+      .navbar__nav-btn--red {
+        background-color: var(--color-primary-bg-black);
+        padding: 2.3rem 1.9rem; } }
+    @media screen and (min-width: 1440px) {
+      .navbar__nav-btn--red {
+        margin-right: 16.5rem; } }
   .navbar__nav-btn--red:hover {
     background-color: var(--color-secondary-red); }
+    @media screen and (min-width: 768px) {
+      .navbar__nav-btn--red:hover {
+        background-color: var(--color-secondary-grayish-black); } }
 
+@media screen and (min-width: 768px) {
+  .navbar__menu {
+    display: none; } }
 .navbar__menu-icon:hover {
   cursor: pointer; }
 .navbar__menu-icon--close {

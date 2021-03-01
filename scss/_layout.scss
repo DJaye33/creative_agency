@@ -6,7 +6,11 @@
   align-items: center;
   padding: 4rem 2.4rem;
   position: relative;
-  border: 2px dotted;
+
+  @media screen and (min-width: 768px) {
+    position: initial;
+    padding: 0;
+  }
 }
 // End Navbar
 /////////////////////////////////////
